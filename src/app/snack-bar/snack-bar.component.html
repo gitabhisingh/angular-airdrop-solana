@@ -1,0 +1,10 @@
+<ng-container *ngIf="data.message; else failed">
+  <span class="snackBar" matSnackBarLabel
+    >Airdrop {{ data.status }}! Transaction ID: <br />
+    {{ data.message }}</span
+  >
+</ng-container>
+
+<ng-template #failed
+  ><span class="snackBar"> Airdrop {{ data.status }}!</span>
+</ng-template>
